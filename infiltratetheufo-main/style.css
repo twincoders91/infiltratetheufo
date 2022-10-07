@@ -1,0 +1,416 @@
+#canvas {
+  background-image: url("../img/arcadegameBG.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0px solid;
+  border-color: white;
+  height: 100%;
+}
+
+#backgroundFrontPage {
+  background-image: url("../img/arcade.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0px solid;
+  border-color: white;
+  background-color: black;
+  height: 60%;
+  max-width: 100%;
+  background-position: center center;
+}
+#canvas1 {
+  border: 0px solid;
+  border-color: rgb(221, 44, 253);
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 0px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+#startScreen {
+  /* position: absolute; */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+#startButtonBox {
+  height: 15%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#descriptionButton {
+  margin: auto 100px;
+  border: 10px solid;
+  cursor: crosshair;
+  padding: 0px 20px 0px 20px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  border-color: rgb(221, 44, 253);
+}
+
+#clickedDescription {
+  margin: auto 100px;
+  border: 10px solid;
+  padding: 5px 20px 5px 20px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: white;
+  border-color: rgb(221, 44, 253);
+}
+
+#instructionButton {
+  margin: auto 100px;
+  border: 10px solid;
+  cursor: crosshair;
+  padding: 0px 20px 0px 20px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  border-color: rgb(221, 44, 253);
+}
+
+#clickedInstructionButton {
+  margin: auto 100px;
+  border: 10px solid;
+  border-color: black;
+  cursor: crosshair;
+  padding: 5px 20px 5px 20px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: white;
+  border-color: rgb(221, 44, 253);
+}
+
+#startButton {
+  border: 10px solid;
+  cursor: pointer;
+  padding: 0px 20px 0px 20px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  border-color: rgb(221, 44, 253);
+  height: 50%;
+}
+
+.buttons {
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+#changePlayer {
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#changePlayer:hover {
+  background-color: rgb(47, 255, 89);
+  color: black;
+}
+
+#back {
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#back:hover {
+  background-color: rgb(47, 255, 89);
+  color: black;
+}
+
+#playerInfo {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#resetButtons {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#changePlayer {
+  font-family: "DotGothic16", sans-serif;
+  border: 5px solid;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  justify-content: center;
+  border-color: rgb(221, 44, 253);
+  background-color: transparent;
+  color: white;
+  border-radius: 15px;
+}
+
+#back {
+  font-family: "DotGothic16", sans-serif;
+  border: 5px solid;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  justify-content: center;
+  border-color: rgb(221, 44, 253);
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+}
+
+#highscore {
+  background-color: transparent;
+  margin: auto;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 40px;
+  color: rgb(47, 255, 89);
+  text-align: center;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+#mainGameComponents {
+  display: flex;
+  margin: auto;
+}
+
+#mainGameComponentsLeft {
+  display: flex;
+  margin: auto;
+  margin-right: 0px;
+  margin-top: 0px;
+  flex-direction: column;
+  border: 5px solid;
+  border-color: black;
+  border-radius: 30px;
+  /* height: 700px; */
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-color: rgb(221, 44, 253);
+}
+
+#gameInfoHeader {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 30px;
+  width: 400px;
+  padding: 12px 20px 0px 20px;
+  justify-content: center;
+  color: yellow;
+}
+
+#gameInfo {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  width: 400px;
+  padding: 12px 20px 12px 20px;
+  justify-content: center;
+  color: white;
+}
+
+#highscoreTable {
+  border: 5px solid;
+  margin: auto 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 400px;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border-color: rgb(47, 255, 89);
+}
+
+#highscoreTableHeader {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  justify-content: center;
+  color: yellow;
+}
+
+#highscoreTableSubHeader {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  color: red;
+}
+
+#results {
+  color: rgb(47, 255, 89);
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+#footer {
+  margin-top: 0px;
+  padding: 10px 0px 10px 0px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  opacity: 80%;
+  font-family: "DotGothic16", sans-serif;
+  height: 5%;
+}
+
+#playerChange {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 5px solid rgb(221, 44, 253);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 500px;
+  max-width: 80%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#playerChangeLabel {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  color: rgb(1, 191, 1);
+}
+
+#heroName {
+  margin: 20px auto;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+}
+
+#submitNewPlayerName {
+  margin: auto;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  background-color: red;
+}
+
+#submitNewPlayerName2 {
+  margin: auto;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+  background-color: red;
+}
+
+#playerChange.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.characterBoxes img {
+  width: 30%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  margin: auto;
+}
+
+.characterBoxes {
+  display: flex;
+  flex-direction: row;
+}
+
+#playerChangeHeader {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#playerChangeTitle {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: yellow;
+}
+
+#closeButton {
+  background: transparent;
+  border: 0px solid;
+  outline: none;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 50px;
+  color: yellow;
+}
+
+#playerChangeBody {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
